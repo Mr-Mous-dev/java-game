@@ -1,5 +1,13 @@
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
 import java.net.URL;
 
 public class TestJFrame {
@@ -9,12 +17,8 @@ public class TestJFrame {
         fenster.setVisible(true);
         fenster.setTitle("Videospiel");
         fenster.toFront();
-        
-        // Icon laden
-        URL iconURL = TestJFrame.class.getResource("auto_brum_brum_videospiel_3D_i.jpeg");
+        URL iconURL = TestJFrame.class.ge   tResource("./auto_brum_brum_videospiel_3D_i.jpeg");
         ImageIcon icon = new ImageIcon(iconURL);
-        fenster.setIconImage(icon.getImage());  // Icon setzen
-
-        fenster.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Fenster schließen richtig handhaben
+        fenster.setIconImage(icon.getImage());  
     }
 }
