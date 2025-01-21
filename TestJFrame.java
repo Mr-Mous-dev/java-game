@@ -17,7 +17,7 @@ public class TestJFrame {
         fenster.setVisible(true);
         fenster.setTitle("Videospiel");
         fenster.toFront();
-        URL iconURL = TestJFrame.class.ge   tResource("./auto_brum_brum_videospiel_3D_i.jpeg");
+        URL iconURL = TestJFrame.class.getResource("./auto_brum_brum_videospiel_3D_i.jpeg");
         ImageIcon icon = new ImageIcon(iconURL);
         fenster.setIconImage(icon.getImage());  
     }
